@@ -121,3 +121,72 @@ button:hover{
     color: hsl(0, 93%, 68%);
     display: none;
 }
+
+#imgmob{
+    display: none;
+}
+
+
+@media (max-width: 500px) {
+
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    picture img{
+        display: none;
+    }
+
+    #imgmob{
+        display: block;
+        width: 490px;
+        margin-bottom: 5rem;
+    } 
+
+    .container{
+        padding: 0;
+    }
+
+    button{
+        left: 360px;
+        bottom: 162px;
+        width: 75px;
+        padding: 23px 43px;
+    }
+
+    #logo{
+        margin: 2rem 2rem;
+    }
+
+    .heading{
+        text-align: center;
+    }
+
+    p{
+        margin: 0 2rem;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #email{
+        display: flex;
+        margin: 2rem;
+        width: 85%;
+        padding: 1.5rem 1rem;
+    }
+
+    ::placeholder{
+        font-size: 20px;
+    }
+
+    #errormsg{
+        margin-top: -25px;
+        font-size: 17px;
+        margin-bottom: 50px;
+    }
+
+    #error{
+        bottom: 186px;
+        left: 320px;
+    }
+}
